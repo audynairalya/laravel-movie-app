@@ -21,7 +21,7 @@
                         <!-- Breadcrumb End -->
 
                         <!-- ====== Table Section Start -->
-                        
+
                         <div class="flex flex-col gap-10">
                             <!-- ====== Table One Start -->
                             <div class="rounded-sm border border-stroke bg-white shadow-default dark:border-strokedark dark:bg-boxdark">
@@ -41,20 +41,19 @@
                                 </div>
 
                                 @foreach ($movies as $movie)
-
                                 <div class="flex flex-col gap-10">
                             <!-- ====== Table One Start -->
                             <div class="rounded-sm border border-stroke bg-white shadow-default dark:border-strokedark dark:bg-boxdark">
                                 <div class="grid grid-cols-6 border-t border-stroke px-4 py-4.5 dark:border-strokedark sm:grid-cols-8 md:px-6 2xl:px-7.5">
                                     <div class="w-12 gap-4 col-span-3 flex items-center">
-                                    <img src="src/images/movie/{{ $movie['poster'] }}" alt="Product" />
-                                        <p class="text-sm font-medium text-black dark:text-white">{{ $movie['title'] }}</p>
+                                    <img src="src/images/movie/{{ $movie->poster }}" alt="Product" />
+                                        <p class="text-sm font-medium text-black dark:text-white">{{ $movie->title }}</p>
                                     </div>
                                     <div class="col-span-1 items-center sm:flex">
-                                        <p class="text-sm font-medium text-black dark:text-white">{{ $movie['genre'] }}</p>
+                                        <p class="text-sm font-medium text-black dark:text-white">{{ $movie->genre->name }}</p>
                                     </div>
                                     <div class="col-span-3 flex items-center">
-                                        <p class="text-sm font-medium text-black dark:text-white">{{ $movie['synopsis'] }}</p>
+                                        <p class="text-sm font-medium text-black dark:text-white">{{ $movie->synopsis }}</p>
                                     </div>
                                         <div class="flex items-center space-x-1">
                                             <a href="" class="inline-flex items-center rounded-md bg-yellow-50 px-2 py-1 text-xs font-medium text-yellow-800 ring-1 ring-inset ring-yellow-600/20">Edit</a>
@@ -65,7 +64,6 @@
                             </div>
 
                                 @endforeach
-
                             <!-- ====== Table Two End -->
                         </div>
                         <!-- ====== Table Section End -->

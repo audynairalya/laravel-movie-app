@@ -43,32 +43,29 @@
                                     </div>
                                 </div>
 
-                                @foreach ($reviews as $review)
-
+                        @foreach ($reviews as $review)
                         <div class="flex flex-col gap-10">
                             <!-- ====== Table Three Start -->
                             <div class="rounded-sm border border-stroke bg-white shadow-default dark:border-strokedark dark:bg-boxdark">
                                 <div class="grid grid-cols-6 border-t border-stroke px-4 py-4.5 dark:border-strokedark sm:grid-cols-12 md:px-6 2xl:px-7.5">
                                     <div class="col-span-1 flex items-center">
-                                        <p class="font-medium">{{ $review['id'] }}</p>
+                                        <p class="font-medium">{{ $review->id }}</p>
                                     </div>
                                     <div class="w-12 gap-4 col-span-3 flex items-center">
-                                        <img src="src/images/movie/{{ $review['poster'] }}" alt="Product" />
-                                        <p class="font-medium">{{ $review['title'] }}</p>
+                                        <p class="font-medium">{{ $review->movie }}</p>
                                     </div>
                                     <div class="col-span-2 items-center sm:flex">
-                                        <p class="font-medium">{{ $review['name'] }}</p>
+                                        <p class="font-medium">{{ $review->user }}</p>
                                     </div>
                                     <div class="col-span-5 flex items-center">
-                                        <p class="font-medium">{{ $review['rate'] }}</p>
+                                        <p class="font-medium">{{ $review->rating }}</p>
                                     </div>
                                     <div class="col-span-1 flex items-center">
-                                        <p class="font-medium">{{ $review['date'] }}</p>
+                                        <p class="font-medium">{{ $review->date }}</p>
                                     </div>
                                 </div>
 
-                                @endforeach
-
+                            @endforeach
                         </div>
                         <!-- ====== Table Section End -->
                     </div>

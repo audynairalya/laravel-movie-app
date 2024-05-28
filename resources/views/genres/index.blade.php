@@ -11,7 +11,7 @@
 
                             <nav>
                                 <a
-                                    href="/genres/create"
+                                    href="/movies/create"
                                     class="text-white bg-gradient-to-r from-blue-500 via-blue-600 to-blue-700 hover:bg-gradient-to-br focus:ring-4 focus:outline-none focus:ring-blue-300 dark:focus:ring-blue-800 font-medium rounded-lg text-sm px-5 py-2.5 text-center me-2 mb-2"
                                 >
                                     Create
@@ -28,9 +28,6 @@
                                 <div class="col-span-1 flex items-center">
                                         <p class="font-medium">Id</p>
                                     </div>
-                                    <div class="col-span-3 flex items-center">
-                                        <p class="font-medium">Anime Name</p>
-                                    </div>
                                     <div class="col-span-1 items-center sm:flex">
                                         <p class="font-medium">Genre</p>
                                     </div>
@@ -38,31 +35,25 @@
                                         <p class="font-medium">Description</p>
                                     </div>
                                 </div>
-                        
-                                @foreach ($genres as $genre)
 
+                                @foreach ($genres as $genre)
                                 <div class="flex flex-col gap-10">
                             <!-- ====== Table Two Start -->
                             <div class="rounded-sm border border-stroke bg-white shadow-default dark:border-strokedark dark:bg-boxdark">
                                 <div class="grid grid-cols-6 border-t border-stroke px-4 py-4.5 dark:border-strokedark sm:grid-cols-8 md:px-6 2xl:px-7.5">
                                 <div class="col-span-1 flex items-center">
-                                        <p class="text-sm font-medium text-black dark:text-white">{{ $genre['id'] }}</p>
+                                        <p class="text-sm font-medium text-black dark:text-white">{{ $genre->id }}</p>
                                     </div>
-                                    <div class="w-12 gap-4 col-span-3 flex items-center">
-                                        <img src="src/images/movie/{{ $genre['poster'] }}" alt="Product" />
-                                        <p class="text-sm font-medium text-black dark:text-white">{{ $genre['title'] }}</p>
-                                    </div>
-                                    <div class="col-span-1 items-center sm:flex">
-                                        <p class="text-sm font-medium text-black dark:text-white">{{ $genre['genre'] }}</p>
+                                    <div>
+                                        <p class="text-sm font-medium text-black dark:text-white">{{ $genre->name }}</p>
                                     </div>
                                     <div class="col-span-3 flex items-center">
-                                        <p class="text-sm font-medium text-black dark:text-white">{{ $genre['description'] }}</p>
+                                        <p class="text-sm font-medium text-black dark:text-white">{{ $genre->description }}</p>
                                     </div>
                                 </div>
 
 
                                 @endforeach
-
                                 </div>
                             <!-- ====== Table Two End -->
                         </div>
