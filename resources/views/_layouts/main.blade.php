@@ -7,7 +7,7 @@
         <title>Movie App | Template by TailAdmin</title>
         <link rel="icon" href="favicon.ico" />
         <script src="https://cdn.tailwindcss.com"></script>
-        <link href="style.css" rel="stylesheet" />
+        <link href="/style.css" rel="stylesheet" />
 
         <!-- Fonts -->
         <link rel="preconnect" href="https://fonts.bunny.net" />
@@ -19,7 +19,7 @@
          darkMode = JSON.parse(localStorage.getItem('darkMode'));
          $watch('darkMode', value => localStorage.setItem('darkMode', JSON.stringify(value)))"
         :class="{'dark text-bodydark bg-boxdark-2': darkMode === true}">
-        
+
         <!-- ===== Preloader Start ===== -->
         @include('_partials/preloader')
         <!-- ===== Preloader End ===== -->
@@ -31,7 +31,7 @@
             <!-- ===== Sidebar End ===== -->
 
             <div class="relative flex flex-1 flex-col overflow-y-auto overflow-x-hidden">
-                
+
                 <!-- ===== Header Start ===== -->
                 @include('_partials/navbar')
                 <!-- ===== Header End ===== -->
@@ -42,6 +42,6 @@
             </div>
         </div>
 
-        <script defer src="bundle.js"></script>
+        <script defer src="/bundle.js"></script>
     </body>
 </html>

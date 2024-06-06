@@ -15,41 +15,41 @@ class ReviewSeeder extends Seeder
     {
         Review::create([
             'id' => 1,
-            'movie' => 'Haikyu!!',
+            'movie_id' => '1',
             'user' => 'Adinda Alfianti',
-            'rating' => '5 star for HAIKYU!! Its a dynamic anime series that follows Shoyo Hinatas journey in high school volleyball.',
+            'rating' => '5/10',
             'date' => '09-04-23',
         ]);
 
         Review::create([
             'id' => 2,
-            'movie' => 'Detective Conan',
+            'movie_id' => '2',
             'user' => 'Dodod Nerralya',
-            'rating' => '8/10, Best anime ever!! Highly recommend it 💕.',
+            'rating' => '8/10',
             'date' => '02-07-24',
         ]);
 
         Review::create([
             'id' => 3,
-            'movie' => 'My Hero Academia',
+            'movie_id' => '3',
             'user' => 'Nathania Wibowo',
-            'rating' => '10 out of 10, This Movie delivers an electrifying extension of the beloved anime series.',
+            'rating' => '10/10',
             'date' => '17-06-21',
         ]);
 
         Review::create([
             'id' => 4,
-            'movie' => 'Dragon Ball Z',
+            'movie_id' => '4',
             'user' => 'Athallah Abyan',
-            'rating' => 'A hundred for Dragon Ball Z Movie, Because the movie teach me important lessons, like working hard to achieve greatness.',
+            'rating' => '8/10',
             'date' => '18-09-20',
         ]);
 
         Review::create([
             'id' => 5,
-            'movie' => 'Jujutsu Kaisen',
+            'movie_id' => '5',
             'user' => 'Muhammad Apis',
-            'rating' => 'Okay.. so Jujutsu Kaisen is now one of my favorite series, 100 out of 10 from me.',
+            'rating' => ' 7/10',
             'date' => '13-01-24',
         ]);
     }

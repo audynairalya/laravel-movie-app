@@ -31,10 +31,24 @@ class MovieSeeder extends Seeder
 
         Movie::create([
             'id' => 3,
-            'title' => 'Dempn Slayer',
+            'title' => 'Demon Slayer',
             'genre_id' => '3',
             'poster' => 'movie-03.jpeg',
             'synopsis' => 'Demon Slayer (Kimetsu no Yaiba) is a popular Japanese manga and anime series created by Koyoharu Gotouge. It tells the story of Tanjiro Kamado, a kind-hearted boy who becomes a demon slayer after his family is slaughtered by demons, and his younger sister, Nezuko, is turned into a demon.',
+        ]);
+        Movie::create([
+            'id' => 4,
+            'title' => 'Tokyo Ghoul',
+            'genre_id' => '4',
+            'poster' => 'movie-05.jpeg',
+            'synopsis' => 'Tokyo Ghoul is set in an alternate reality where ghouls, creatures that look like normal people but can only survive by eating human flesh, live among the human population in secrecy, hiding their true nature in order to evade pursuit from the authorities.',
+        ]);
+        Movie::create([
+            'id' => 5,
+            'title' => 'Jujutsu Kaisen',
+            'genre_id' => '5',
+            'poster' => 'movie-06.jpeg',
+            'synopsis' => 'Jujutsu Kaisen is the story of Yuji Itadori, an easygoing high school student who joins the occult club at school. When they accidentally summon grotesque creatures by messing with a cursed object, Itadori fights to save his friends lives.',
         ]);
     }
 }
