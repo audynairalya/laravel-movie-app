@@ -37,6 +37,7 @@ class MovieController extends Controller
     }
 
 <<<<<<< HEAD
+<<<<<<< HEAD
         public function edit(Movie $movie)
     {
         $genres = Genre::all();
@@ -57,6 +58,8 @@ class MovieController extends Controller
         return redirect('/movies')->with('success', 'Movie updated successfully!');
     }
 
+=======
+>>>>>>> 18230d6573fa50d6e2a0713b6e8beb45cd8c3410
 =======
 >>>>>>> 18230d6573fa50d6e2a0713b6e8beb45cd8c3410
     public function destroy(Movie $movie)

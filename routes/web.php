@@ -3,7 +3,10 @@
 use App\Http\Controllers\MovieController;
 use App\Http\Controllers\GenreController;
 <<<<<<< HEAD
+<<<<<<< HEAD
 use App\Http\Controllers\ProductController;
+=======
+>>>>>>> 18230d6573fa50d6e2a0713b6e8beb45cd8c3410
 =======
 >>>>>>> 18230d6573fa50d6e2a0713b6e8beb45cd8c3410
 use App\Http\Controllers\ReviewController;
@@ -24,6 +27,7 @@ Route::get('/', function () {
     return view('welcome');
 });
 <<<<<<< HEAD
+<<<<<<< HEAD
 Route::get('/products',[ProductController::class, 'index']);
 
 Route::resource('/movies', MovieController::class);
@@ -34,6 +38,8 @@ Route::resource('/reviews', ReviewController::class);
 
 
 =======
+=======
+>>>>>>> 18230d6573fa50d6e2a0713b6e8beb45cd8c3410
 Route::get('/products', function () {
     return view('product');
 });
@@ -53,4 +59,7 @@ Route::get('/reviews/create', [ReviewController::class, 'create']);
 Route::get('/reviews',[ReviewController::class, 'index']);
 Route::post('/reviews', [ReviewController::class, 'store']);
 Route::delete('/reviews/{review}', [ReviewController::class, 'destroy']);
+<<<<<<< HEAD
+>>>>>>> 18230d6573fa50d6e2a0713b6e8beb45cd8c3410
+=======
 >>>>>>> 18230d6573fa50d6e2a0713b6e8beb45cd8c3410

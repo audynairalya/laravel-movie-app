@@ -117,7 +117,11 @@
                                     name="rating"
                                     type="text"
 <<<<<<< HEAD
+<<<<<<< HEAD
                                     placeholder="Enter rating anime"
+=======
+                                    placeholder="Enter ratting anime"
+>>>>>>> 18230d6573fa50d6e2a0713b6e8beb45cd8c3410
 =======
                                     placeholder="Enter ratting anime"
 >>>>>>> 18230d6573fa50d6e2a0713b6e8beb45cd8c3410

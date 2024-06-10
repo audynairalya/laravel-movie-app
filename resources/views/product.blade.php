@@ -9,6 +9,7 @@
 
                         <div class="grid grid-cols-1 gap-7.5 sm:grid-cols-2 xl:grid-cols-4">
 <<<<<<< HEAD
+<<<<<<< HEAD
 
                             @foreach ($movies as $movie)
                             <div class="rounded-sm border border-stroke bg-white shadow-default dark:border-strokedark dark:bg-boxdark">
@@ -19,10 +20,16 @@
                                 <a href="#" class="block px-4 pt-4">
                                     <img class="object-cover h-60 w-96" src="src/images/movie/movie-01.jpeg" alt="Movies" />
 >>>>>>> 18230d6573fa50d6e2a0713b6e8beb45cd8c3410
+=======
+                            <div class="rounded-sm border border-stroke bg-white shadow-default dark:border-strokedark dark:bg-boxdark">
+                                <a href="#" class="block px-4 pt-4">
+                                    <img class="object-cover h-60 w-96" src="src/images/movie/movie-01.jpeg" alt="Movies" />
+>>>>>>> 18230d6573fa50d6e2a0713b6e8beb45cd8c3410
                                 </a>
 
                                 <div class="p-6 overflow-hidden">
                                     <h4 class="mb-3 text-xl font-semibold text-black dark:text-white">
+<<<<<<< HEAD
 <<<<<<< HEAD
                                         <a href="#">{{ $movie->title }}</a>
                                     </h4>
@@ -38,6 +45,8 @@
                 </main>
 @endsection
 =======
+=======
+>>>>>>> 18230d6573fa50d6e2a0713b6e8beb45cd8c3410
                                         <a href="#">Dragon Ball Z</a>
                                     </h4>
                                     <p class="font-medium">
@@ -93,5 +102,9 @@
                         </div>
                     </div>
                 </main>
+<<<<<<< HEAD
+@endsection
+>>>>>>> 18230d6573fa50d6e2a0713b6e8beb45cd8c3410
+=======
 @endsection
 >>>>>>> 18230d6573fa50d6e2a0713b6e8beb45cd8c3410
