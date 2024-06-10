@@ -34,6 +34,7 @@ class GenreController extends Controller
         return redirect('/genres')->with('success', 'Genre added successfully!');
     }
 
+<<<<<<< HEAD
     public function edit(Genre $genre)
     {
         $genres = Genre::all();
@@ -53,6 +54,8 @@ class GenreController extends Controller
     }
 
 
+=======
+>>>>>>> 18230d6573fa50d6e2a0713b6e8beb45cd8c3410
     public function destroy(Genre $genre)
     {
         $genre->delete();

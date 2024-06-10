@@ -116,7 +116,11 @@
                                     id="rating"
                                     name="rating"
                                     type="text"
+<<<<<<< HEAD
                                     placeholder="Enter rating anime"
+=======
+                                    placeholder="Enter ratting anime"
+>>>>>>> 18230d6573fa50d6e2a0713b6e8beb45cd8c3410
                                     class="w-full rounded border-[1.5px] border-stroke bg-transparent px-5 py-3 font-normal text-black outline-none transition focus:border-primary active:border-primary disabled:cursor-default disabled:bg-whiter dark:border-form-strokedark dark:bg-form-input dark:text-white dark:focus:border-primary"
                                 />
                             </div>

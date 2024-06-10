@@ -91,11 +91,19 @@
                     </div>
                     <div class="col-span-1 flex items-center">
                         <div class="flex items-center space-x-1">
+<<<<<<< HEAD
                             <a href="/genres/{{ $genre->id }}/edit" class="inline-flex item-center rounded-md bg-yellow-50 px-2 py-1 text-xs font-medium text-yellow-800 ring-1 ring-inset ring-yellow-600/20">Edit</a>
                             <form action="/genres/{{ $genre->id }}" method="POST">
                                 @csrf
                                 @method('DELETE')
                                 <button type="submit" class="inline-flex items-center rounded-md bg-red-50 px-2 py-1 text-xs font-medium text-red-800 ring-1 ring-inset ring-red-600/20" onclick="return confirm('Are you sure want to delete?')">Delete</button>
+=======
+                            <a href="" class="inline-flex item-center rounded-md bg-yellow-50 px-2 py-1 text-xs font-medium text-yellow-800 ring-1 ring-inset ring-yellow-600/20">Edit</a>
+                            <form action="/genres/{{ $genre->id }}" method="POST">
+                                @csrf
+                                @method('DELETE')
+                                <button type="submit" class="inline-flex items-center rounded-md bg-red-50 px-2 py-1 text-xs font-medium text-red-800 ring-1 ring-inset ring-red-600/20" onclick="return confirm('Apakah Anda yakin ingin menghapus?')">Delete</button>
+>>>>>>> 18230d6573fa50d6e2a0713b6e8beb45cd8c3410
                             </form>
                         </div>
                     </div>

@@ -36,6 +36,7 @@ class ReviewController extends Controller
         return redirect('/reviews')->with('success', 'Review added successfully!');
     }
 
+<<<<<<< HEAD
     public function edit(review $review)
     {
         $movies = Movie::all();
@@ -56,6 +57,8 @@ class ReviewController extends Controller
         return redirect('/reviews')->with('success', 'Review updated successfully!');
     }
 
+=======
+>>>>>>> 18230d6573fa50d6e2a0713b6e8beb45cd8c3410
         public function destroy(Review $review)
     {
         $review->delete();
